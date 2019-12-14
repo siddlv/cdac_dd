@@ -1,0 +1,1 @@
+cmd_/home/siddlv/cdac/DeviceDrivers/Programs/hello_module/hello.ko := arm-linux-gnueabihf-ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/siddlv/cdac/DeviceDrivers/Programs/hello_module/hello.ko /home/siddlv/cdac/DeviceDrivers/Programs/hello_module/hello.o /home/siddlv/cdac/DeviceDrivers/Programs/hello_module/hello.mod.o ;  true
