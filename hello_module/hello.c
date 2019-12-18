@@ -1,6 +1,9 @@
 #include <linux/init.h>
 #include <linux/module.h>
 
+MODULE_LICENSE("GPL v3.0");
+MODULE_AUTHOR("Siddhesh Dalvi");
+
 static int hello_init(void){
 	printk("\nHello World\n");
 	return 0;
