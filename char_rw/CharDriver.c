@@ -5,6 +5,10 @@
 #include <linux/fs.h>
 #include <linux/cdev.h>
 #include <linux/uaccess.h>
+
+MODULE_LICENSE("GPL v3.0");
+MODULE_AUTHOR("Siddhesh Dalvi");
+
 #define NAME MyCharDevice
 
 //Function Prototypes
@@ -51,6 +55,7 @@ static int __init CharDevice_init(void)
 	if(result<0)
 	{
 		printk(KERN_ALERT "\nChar Device is not created\n");
+		unregister_chrdev_region(Mydev, 1);
 		return (-1);
 	}
 	return 0;
