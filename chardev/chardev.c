@@ -4,6 +4,9 @@
 #include<linux/cdev.h>
 #include<linux/fs.h>
 
+MODULE_LICENSE("GPL v3.0");
+MODULE_AUTHOR("Siddhesh Dalvi");
+
 dev_t dev_no;
 struct cdev c_dev;
 struct file_operations fops = {};
